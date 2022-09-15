@@ -10,9 +10,8 @@ const Contact: React.FC<ContactProps> = () => {
     <div id="contact" className="container mx-auto px-3 py-16">
       <div className="text-center">
         <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl max-w-2xl mx-auto">
-          Want to list your <span className="text-primary-500">token</span>,
-          launch your <span className="text-primary-500">IDO</span> or become a
-          JEX <span className="text-primary-500">partner</span> ?
+          Want to list your <span className="text-primary-500">token</span>, or
+          become a JEX <span className="text-primary-500">partner</span> ?
         </p>
         <div className="pt-8">
           <a
