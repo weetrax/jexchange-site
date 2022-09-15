@@ -18,10 +18,10 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>BoilerNext - Home</title>
+        <title>JEXchange.io</title>
         <meta
           name="description"
-          content="BoilerNext - A NextJS - Tailwind - Typescript Boilerplate"
+          content="A P2P decentralized exchange built on Elrond"
         />
         <link rel="icon" href="/assets/img/favicon.ico" />
       </Head>
