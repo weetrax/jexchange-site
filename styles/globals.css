@@ -23,8 +23,8 @@
     z-index: 0;
     will-change: -webkit-mask-position, -moz-mask-position, mask-position, transform;
     overflow: hidden;
-    -webkit-mask-image: radial-gradient(circle at 0% 0%, black 0%, rgba(0, 0, 0, 0.08) 0%);
-    mask-image: radial-gradient(circle at 0% 0%, black 0%, rgba(0, 0, 0, 0.08) 0%);
+    -webkit-mask-image: radial-gradient(circle at 0% 0%, black 0%, rgba(0, 0, 0, 0.03) 0%);
+    mask-image: radial-gradient(circle at 0% 0%, black 0%, rgba(0, 0, 0, 0.03) 0%);
     -webkit-mask-position: 0% 0%;
     mask-position: 0% 0%;
     -webkit-mask-repeat: no-repeat;

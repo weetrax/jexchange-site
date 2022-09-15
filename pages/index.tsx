@@ -95,7 +95,7 @@ const Home: NextPage = () => {
                       className="hover:shadow-[0_0_20px_-7px_rgba(0,161,154,1)] pointer-events-none md:pointer-events-auto min-w-[100px] rounded border dark:border dark:border-dark-600 hover:border-primary-500 dark:hover:border-primary-500 duration-200 transition-all ease-in-out"
                     >
                       <div className="flex flex-col text-center">
-                        <div className="flex-1">
+                        <div className="p-1">
                           <img
                             className="mx-auto w-24 h-24 md:h-32 md:w-32 object-cover rounded-full"
                             src={x.imgUrl}
