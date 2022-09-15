@@ -17,16 +17,16 @@ const _Layout: React.FC<_LayoutProps> = ({ children }) => {
     <div className={theme}>
       <div
         className={
-          "flex flex-col min-h-screen bg-gray-50 dark:bg-dark-500 text-black dark:text-white font-body"
+          "flex flex-col min-h-screen bg-gray-100 dark:bg-dark-500 text-black dark:text-white font-body"
         }
       >
         <Navbar />
         <Toaster position="bottom-right" reverseOrder={false} />
         <NextNprogress
-          color="#fca311"
+          color="#00a19a"
           startPosition={0.3}
           stopDelayMs={200}
-          height={3}
+          height={2}
           options={{ showSpinner: false }}
           showOnShallow={true}
         />

@@ -2,3 +2,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.min-h-screen-nav {
+    min-height: calc(100vh - 64px);
+}
+
+.title-gradient {
+    background: linear-gradient(90deg, #00a19a, #33b4ae 45%, #66c7c2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 50px rgba(192, 219, 255, 0.25)
+  }
+
+.text-shadown-hover:hover {
+    text-shadow : 0 0 20px -7px rgba(0,161,154,1);
+}
+
+.esdt-gallery {
+    z-index: 0;
+    will-change: -webkit-mask-position, -moz-mask-position, mask-position, transform;
+    overflow: hidden;
+    -webkit-mask-image: radial-gradient(circle at 0% 0%, black 0%, rgba(0, 0, 0, 0.08) 0%);
+    mask-image: radial-gradient(circle at 0% 0%, black 0%, rgba(0, 0, 0, 0.08) 0%);
+    -webkit-mask-position: 0% 0%;
+    mask-position: 0% 0%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 200% 200%;
+    mask-size: 200% 200%;
+}
+
+@media (min-width: 768px) {
+    .esdt-gallery {
+        display: block;
+        position: relative;
+        transform-origin: right center;
+        -webkit-transform: perspective(140px) rotateY(-3deg) translatez(0) translatex(-50px);
+        -moz-transform: perspective(140px) rotateY(-3deg) translatez(0) translatex(-50px);
+        -ms-transform: perspective(140px) rotateY(-3deg) translatez(0) translatex(-50px);
+        transform: perspective(140px) rotateY(-3deg) translatez(0) translatex(-50px);
+        right: -50px;
+        padding: 1rem;
+        will-change: -webkit-mask-position, -moz-mask-position, mask-position, transform;
+        overflow: hidden;
+        -webkit-mask-image: radial-gradient(circle at 50% 50%, black 10%, rgba(0, 0, 0, 0.1) 50%);
+        mask-image: radial-gradient(circle at 50% 50%, black 10%, rgba(0, 0, 0, 0.1) 50%);
+        -webkit-mask-position: 0% 50%;
+        mask-position: 0% 50%;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 200% 200%;
+        mask-size: 200% 200%;
+    }
+}

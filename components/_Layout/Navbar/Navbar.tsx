@@ -14,8 +14,26 @@ type NavbarProps = {
 };
 
 const navigation = [
-  { name: "Home", href: routes.home },
-  { name: "Portfolio", href: routes.portfolio },
+  { name: "Home", href: "/", isNextLink: true, show: true },
+  {
+    name: "App",
+    href: "https://app.jexchange.io/",
+    isNextLink: false,
+    target: "_blank",
+    show: true,
+  },
+  {
+    name: "Litepaper",
+    href: "https://medium.com/@jexchangep2p/jex-litepaper-b5d48e69b084",
+    isNextLink: false,
+    target: "_blank",
+    show: true,
+  },
+  { name: "Tokenomics", href: "/tokenomics", isNextLink: true, show: true },
+  { name: "Roadmap", href: "/roadmap", isNextLink: true, show: true },
+  { name: "Our team", href: "/team", isNextLink: true, show: true },
+  { name: "FAQ", href: "/faq", isNextLink: true, show: true },
+  { name: "Contact us", href: "/contact", isNextLink: true, show: true },
 ];
 
 const Navbar: React.FC<NavbarProps> = () => {
@@ -25,7 +43,7 @@ const Navbar: React.FC<NavbarProps> = () => {
   return (
     <Disclosure
       as="nav"
-      className="bg-white dark:bg-dark-600 backdrop-filter backdrop-blur bg-opacity-70 items-center sticky top-0 shadow-sm z-20"
+      className="bg-white dark:bg-dark-600/50 backdrop-filter backdrop-blur bg-opacity-70 dark:bg-opacity-70 items-center sticky top-0 shadow-sm z-20"
     >
       {({ open }) => (
         <>
@@ -43,37 +61,56 @@ const Navbar: React.FC<NavbarProps> = () => {
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex-shrink-0 flex items-center">
+                <div className="flex-shrink-0 flex items-center ml-12 sm:ml-0">
                   <img
-                    className="block lg:hidden h-8 w-auto"
-                    src="/assets/img/logo.svg"
+                    className="block lg:hidden h-9 w-auto"
+                    src="/assets/img/logo.png"
                     alt="Workflow"
                   />
                   <img
-                    className="hidden lg:block h-8 w-auto"
-                    src="/assets/img/logo.svg"
+                    className="hidden lg:block h-9 w-auto"
+                    src="/assets/img/logo.png"
                     alt="Workflow"
                   />
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <Link href={item.href} key={item.name}>
-                        <a
-                          className={classNames(
-                            router.pathname == item.href
-                              ? "bg-primary-500 text-white"
-                              : "hover:bg-primary-500 hover:text-white duration-200 ease-in-out transition",
-                            "px-3 py-2 rounded-md text-sm font-medium"
-                          )}
-                          aria-current={
-                            router.pathname == item.href ? "page" : undefined
-                          }
-                        >
-                          {item.name}
-                        </a>
-                      </Link>
-                    ))}
+                    {navigation.map((item) =>
+                      item.show ? (
+                        item.isNextLink ? (
+                          <Link href={item.href} key={item.name}>
+                            <a
+                              className={classNames(
+                                router.pathname === item.href
+                                  ? "text-primary-500 font-bold"
+                                  : "",
+                                "hover:text-primary-500 py-2 text-sm font-medium transition duration-200 ease-in-out cursor-pointer"
+                              )}
+                            >
+                              {item.name}
+                            </a>
+                          </Link>
+                        ) : (
+                          <a
+                            key={item.name}
+                            href={item.target && item.href}
+                            target={item.target}
+                            rel="noreferrer"
+                            className={classNames(
+                              router.pathname == item.href ? "" : "",
+                              "hover:text-primary-500 py-2 text-sm font-medium transition duration-200 ease-in-out cursor-pointer"
+                            )}
+                            aria-current={
+                              router.pathname == item.href ? "page" : undefined
+                            }
+                          >
+                            {item.name}
+                          </a>
+                        )
+                      ) : (
+                        <></>
+                      )
+                    )}
                   </div>
                 </div>
               </div>
