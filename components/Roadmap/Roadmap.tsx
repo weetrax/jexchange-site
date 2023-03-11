@@ -92,6 +92,7 @@ const Roadmap: React.FC<RoadmapProps> = () => {
                     href="http://bit.ly/3UadpVm"
                     className="font-bold border-b border-primary-500 text-primary-500"
                     target={"_blank"}
+                    rel="noreferrer noopener"
                   >
                     more information
                     <svg
