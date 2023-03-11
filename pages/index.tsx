@@ -189,25 +189,6 @@ const Home: NextPage = () => {
           </div>
         </div>
       </Container>
-      <div className="text-center fill-dark-400">
-        <ArrowDown />
-      </div>
-      <Container>
-        <div className="py-16 text-center">
-          <p className="text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl max-w-2xl mx-auto mb-12">
-            Want to list your <span className="text-primary-500">token</span>,
-            become a JEX <span className="text-primary-500">partner</span> ?
-          </p>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            className="px-3 py-2 bg-primary-500 border border-primary-500 hover:bg-primary-400 rounded text-lg transition-all duration-200 ease-in-out hover:border-primary-500"
-            href="https://docs.google.com/forms/d/12iFKlN0XztRGmay49ubtzpPRGEpd_juHkmEOQP1D56c/"
-          >
-            Contact us
-          </a>
-        </div>
-      </Container>
     </div>
   );
 };
