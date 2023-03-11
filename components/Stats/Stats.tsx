@@ -29,7 +29,7 @@ const Stats: React.FC<StatsProps> = () => {
       }
     );
 
-    fetch("https://api.elrond.com/tokens/JEX-9040ca/accounts/count").then(
+    fetch("https://api.multiversx.com/tokens/JEX-9040ca/accounts/count").then(
       async (response) => {
         const res = await response.json();
         setJexHolders(res);

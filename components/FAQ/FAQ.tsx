@@ -83,8 +83,8 @@ const questions: FAQType[] = [
           the app.
         </p>
         <p>
-          You can see your balance of these tokens in the JEX, in the Elrond web
-          wallet or on Elrond explorer.
+          You can see your balance of these tokens in the JEX, in the MultiversX
+          web wallet or on the MultiversX explorer.
         </p>
       </div>
     ),

@@ -128,22 +128,22 @@ const Tokenomics: React.FC<TokenomicsProps> = () => {
           <p>
             &#42;&#42; the tokens allocated to the team will be locked in a
             smart contract that will prevent any claim before the end of the
-            lock-up period (6 month after the launch on Elrond mainnet).
+            lock-up period (6 month after the launch on MultiversX mainnet).
           </p>
           <p>
-            The official JEX token identifier on Elrond blockchain is:{" "}
+            The official JEX token identifier on MultiversX blockchain is:{" "}
             <span className="text-primary-500 font-bold">JEX-9040ca</span>
           </p>
           <p>
             The details and attributes of the token are available on the
-            official Elrond explorer:{" "}
+            official MultiversX explorer:{" "}
             <a
               className="text-primary-500"
-              href="https://explorer.elrond.com/tokens/JEX-9040ca"
+              href="https://explorer.multiversx.com/tokens/JEX-9040ca"
               rel="noreferrer"
               target={"_blank"}
             >
-              https://explorer.elrond.com/tokens/JEX-9040ca
+              https://explorer.multiversx.com/tokens/JEX-9040ca
             </a>
           </p>
         </div>

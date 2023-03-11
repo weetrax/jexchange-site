@@ -9,7 +9,7 @@ const TokenomicsPage: NextPage = () => {
         <title>JEXchange.io - Tokenomics</title>
         <meta
           name="description"
-          content="A P2P decentralized exchange built on Elrond"
+          content="A P2P decentralized exchange built on MultiversX"
         />
         <link rel="icon" href="/assets/img/favicon.ico" />
       </Head>

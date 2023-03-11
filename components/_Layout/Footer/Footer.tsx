@@ -17,9 +17,9 @@ const Footer: React.FC<FooterProps> = () => {
               className="font-semibold"
               rel="noreferrer"
               target="_blank"
-              href="https://elrond.com/"
+              href="https://multiversx.com/"
             >
-              Elrond
+              MultiversX
             </a>
           </div>
           <div className="flex gap-4">

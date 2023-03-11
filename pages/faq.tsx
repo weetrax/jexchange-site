@@ -9,7 +9,7 @@ const FAQPage: NextPage = () => {
         <title>JEXchange.io - FAQ</title>
         <meta
           name="description"
-          content="A P2P decentralized exchange built on Elrond"
+          content="A P2P decentralized exchange built on MultiversX"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

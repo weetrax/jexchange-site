@@ -9,7 +9,7 @@ const RoadmapPage: NextPage = () => {
         <title>JEXchange.io - Roadmap</title>
         <meta
           name="description"
-          content="A P2P decentralized exchange built on Elrond"
+          content="A P2P decentralized exchange built on MultiversX"
         />
         <link rel="icon" href="/assets/img/favicon.ico" />
       </Head>

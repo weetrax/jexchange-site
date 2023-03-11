@@ -21,7 +21,7 @@ const Home: NextPage = () => {
         <title>JEXchange.io</title>
         <meta
           name="description"
-          content="A P2P decentralized exchange built on Elrond"
+          content="A P2P decentralized exchange built on MultiversX"
         />
         <link rel="icon" href="/assets/img/favicon.ico" />
       </Head>
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
               </strong>
             </h1>
             <h2 className="tracking-tight text-xl">
-              A P2P decentralized exchange built on Elrond
+              A P2P decentralized exchange built on MultiversX
             </h2>
             <h3 className="text-lg mt-12">
               Start trading your{" "}
@@ -133,7 +133,7 @@ const Home: NextPage = () => {
                 JEX
               </strong>{" "}
               aims at being a decentralized exchange that allows safe exchange
-              of Elrond ecosystem tokens between users.
+              of MultiversX ecosystem tokens between users.
             </p>
           </div>
           <div className="mt-10">

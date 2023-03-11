@@ -46,11 +46,11 @@ const Team: React.FC<TeamProps> = () => {
           Meet our team
         </p>
         <p className="pt-8 w-2/3 mx-auto">
-          Gathered around Elrond technology as a common interest, we shared our
-          ideas and our vision to identify the needs of the Elrond community.
-          From there we decided to use our skills and resources to imagine an
-          innovative solution to remedy this problem and fit the needs of users
-          of Elrond blockchain.
+          Gathered around MultiversX technology as a common interest, we shared
+          our ideas and our vision to identify the needs of the MultiversX
+          community. From there we decided to use our skills and resources to
+          imagine an innovative solution to remedy this problem and fit the
+          needs of users of MultiversX blockchain.
         </p>
         <ul
           role="list"

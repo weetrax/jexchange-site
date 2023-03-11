@@ -20,7 +20,7 @@ const Roadmap: React.FC<RoadmapProps> = () => {
               <ul className="list-disc list-inside pl-4">
                 <li>Tokenomics implementation (testnet) ✅</li>
                 <li>Smart contracts audit ✅</li>
-                <li>Deployment on Elrond mainnet ✅</li>
+                <li>Deployment on MultiversX mainnet ✅</li>
                 <li>JEX token public sale ✅</li>
                 <li>Reward program (phase 1) ✅</li>
               </ul>
@@ -42,7 +42,7 @@ const Roadmap: React.FC<RoadmapProps> = () => {
             <div className="shadow shadow-primary-500/20 border dark:border-dark-600 dark:hover:border-primary-500 hover:border-primary-500 hover:shadow-[0_0_20px_-7px_rgba(0,161,154,1)] transition-all duration-200 ease-in-out col-start-6 col-end-10 p-4 rounded-md my-4 mr-auto w-full">
               <p className="font-semibold text-lg">2022 Q2</p>
               <ul className="list-disc list-inside pl-4">
-                <li>Integration of other tokens of Elrond ecosystem ✅</li>
+                <li>Integration of other tokens of MultiversX ecosystem ✅</li>
                 <li>Buy/sell ESDT/NFTs feature ✅</li>
                 <li>Reward program (phase 2) ✅</li>
               </ul>
