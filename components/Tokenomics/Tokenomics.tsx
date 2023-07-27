@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import PropTypes from "prop-types";
 import { ArcElement, Chart as ChartJS, Legend, Tooltip } from "chart.js";

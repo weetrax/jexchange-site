@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import Container from "../Container";
 import PropTypes from "prop-types";
 
@@ -27,7 +27,7 @@ const Footer: React.FC<FooterProps> = () => {
               rel="noreferrer"
               title="Twitter"
               target="_blank"
-              href="https://twitter.com/jexchangeP2P"
+              href="https://twitter.com/JEXchangeDefi"
             >
               <i>
                 <svg
@@ -75,7 +75,7 @@ const Footer: React.FC<FooterProps> = () => {
               rel="noreferrer"
               title="Medium"
               target="_blank"
-              href="https://medium.com/@jexchangep2p"
+              href="https://medium.com/@JEXchangeDefi"
             >
               <i>
                 <svg

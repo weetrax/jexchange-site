@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 import React from "react";
 import { Disclosure } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { routes } from "../../../routes";
 import { useRouter } from "next/router";
 import { useTheme } from "../../../hooks/useTheme";
 
@@ -24,7 +23,7 @@ const navigation = [
   },
   {
     name: "Litepaper",
-    href: "https://medium.com/@jexchangep2p/jex-litepaper-b5d48e69b084",
+    href: "https://medium.com/@JEXchangeDefi/jex-litepaper-b5d48e69b084",
     isNextLink: false,
     target: "_blank",
     show: true,

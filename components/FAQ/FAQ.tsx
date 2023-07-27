@@ -284,7 +284,7 @@ const FAQ: React.FC<FAQProps> = () => {
             rel="noreferrer"
             target={"_blank"}
             className="flex items-center px-3 py-2 border border-dark-100 dark:border-dark-400 rounded text-base transition-colors duration-200 ease-in-out hover:border-primary-500 dark:hover:border-primary-500"
-            href="https://medium.com/@jexchangep2p/jex-litepaper-b5d48e69b084"
+            href="https://medium.com/@JEXchangeDefi/jex-litepaper-b5d48e69b084"
           >
             LITEPAPER (EN)
           </a>
@@ -292,7 +292,7 @@ const FAQ: React.FC<FAQProps> = () => {
             rel="noreferrer"
             target={"_blank"}
             className="flex items-center px-3 py-2 border border-dark-100 dark:border-dark-400 rounded text-base transition-colors duration-200 ease-in-out hover:border-primary-500 dark:hover:border-primary-500"
-            href="https://medium.com/@jexchangep2p/jex-litepaper-11c5a168d1dc"
+            href="https://medium.com/@JEXchangeDefi/jex-litepaper-11c5a168d1dc"
           >
             LITEPAPER (FR)
           </a>

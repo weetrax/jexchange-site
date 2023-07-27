@@ -21,7 +21,7 @@ const Home: NextPage = () => {
         <title>JEXchange.io</title>
         <meta
           name="description"
-          content="A P2P decentralized exchange built on MultiversX"
+          content="Decentralized exchange and DeFi tools built on MultiversX"
         />
         <link rel="icon" href="/assets/img/favicon.ico" />
       </Head>
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
               </strong>
             </h1>
             <h2 className="tracking-tight text-xl">
-              A P2P decentralized exchange built on MultiversX
+              Decentralized exchange and DeFi tools built on MultiversX
             </h2>
             <h3 className="text-lg mt-12">
               Start trading your{" "}
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
                 rel="noreferrer"
                 target="_blank"
                 className="flex items-center px-3 py-2 border border-dark-100 dark:border-dark-400 rounded text-base transition-colors duration-200 ease-in-out hover:border-primary-500 dark:hover:border-primary-500"
-                href="https://medium.com/@jexchangep2p/jex-litepaper-b5d48e69b084"
+                href="https://medium.com/@JEXchangeDefi/jex-litepaper-b5d48e69b084"
               >
                 LITEPAPER (EN)
               </a>
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
                 rel="noreferrer"
                 target="_blank"
                 className="flex items-center px-3 py-2 border border-dark-100 dark:border-dark-400 rounded text-base transition-all duration-200 ease-in-out hover:border-primary-500 dark:hover:border-primary-500"
-                href="https://medium.com/@jexchangep2p/jex-litepaper-11c5a168d1dc"
+                href="https://medium.com/@JEXchangeDefi/jex-litepaper-11c5a168d1dc"
               >
                 LITEPAPER (FR)
               </a>
@@ -139,7 +139,7 @@ const Home: NextPage = () => {
           <div className="mt-10">
             <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
               <div className="flex gap-4">
-                <img className="h-28 w-28" src="/assets/img/trade-2.png"></img>
+                <img className="h-28 w-28" src="/assets/img/trade.png"></img>
                 <div>
                   <p className="text-lg leading-6 font-semibold">Trade</p>
                   <div className="mt-2 text-base">
@@ -150,7 +150,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div className="flex gap-4">
-                <img className="h-28 w-28" src="/assets/img/earn-2.png"></img>
+                <img className="h-28 w-28" src="/assets/img/earn.png"></img>
                 <div>
                   <p className="text-lg leading-6 font-semibold">Earn</p>
                   <div className="mt-2 text-base">
@@ -160,7 +160,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div className="flex gap-4">
-                <img className="h-28 w-28" src="/assets/img/flash-2.png"></img>
+                <img className="h-28 w-28" src="/assets/img/flash.png"></img>
                 <div>
                   <p className="text-lg leading-6 font-semibold">Governance</p>
                   <div className="mt-2 text-base">
@@ -173,7 +173,7 @@ const Home: NextPage = () => {
               <div className="flex gap-4">
                 <img
                   className="h-28 w-28"
-                  src="/assets/img/launchpad-2.png"
+                  src="/assets/img/launchpad.png"
                 ></img>
                 <div>
                   <p className="text-lg leading-6 font-semibold">Launchpad</p>

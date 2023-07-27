@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
+import { numberWithCommas } from "../../tools";
 
 type StatsProps = {
   //
@@ -8,10 +9,6 @@ type StatsProps = {
 type Price = {
   rate: number;
   unit: string;
-};
-
-const numberWithCommas = (x: number) => {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 };
 
 const initalJexHolderState = 3300;
