@@ -91,7 +91,7 @@ const Home: NextPage = () => {
                       key={i}
                       rel="noreferrer"
                       target={"_blank"}
-                      href={`https://app.jexchange.io/searchoffers?token_a=${x.identifier}&token_b=WEGLD-bd4d79`}
+                      href={`https://app.jexchange.io/trade?token_a=${x.identifier}&token_b=WEGLD-bd4d79`}
                       className="hover:shadow-[0_0_20px_-7px_rgba(0,161,154,1)] pointer-events-none md:pointer-events-auto min-w-[100px] rounded border dark:border dark:border-dark-600 hover:border-primary-500 dark:hover:border-primary-500 duration-200 transition-all ease-in-out"
                     >
                       <div className="flex flex-col text-center">
