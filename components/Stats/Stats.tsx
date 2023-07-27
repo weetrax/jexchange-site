@@ -11,7 +11,7 @@ type Price = {
   unit: string;
 };
 
-const initalJexHolderState = 3300;
+const initalJexHolderState = 14797;
 
 const Stats: React.FC<StatsProps> = () => {
   const [jexPrice, setJexPrice] = useState<Price | null>(null);
@@ -71,7 +71,7 @@ const Stats: React.FC<StatsProps> = () => {
           <div className=" ">
             <div className="flex gap-2 flex-col">
               <div className="font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight">
-                17+
+                100+
               </div>
               <div className="text-sm tracking-tight">Token listed</div>
             </div>
