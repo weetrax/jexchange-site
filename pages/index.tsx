@@ -154,8 +154,8 @@ const Home: NextPage = () => {
                 <div>
                   <p className="text-lg leading-6 font-semibold">Earn</p>
                   <div className="mt-2 text-base">
-                    Generate yield and earn up to 17+ assets at the same time by
-                    staking <span className="font-bold">$JEX</span>.
+                    Generate yield and earn up to 100+ assets at the same time
+                    by staking <span className="font-bold">$JEX</span>.
                   </div>
                 </div>
               </div>
