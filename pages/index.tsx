@@ -126,7 +126,7 @@ const Home: NextPage = () => {
         <div className="py-16">
           <div className="text-center">
             <p className="text-primary-500 mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
-              All-in-one platform
+              All-in-one Platform
             </p>
             <p className="mt-4 max-w-2xl text-xl mx-auto">
               <strong className="text-primary-500 font-bold text-xl">
@@ -137,9 +137,12 @@ const Home: NextPage = () => {
             </p>
           </div>
           <div className="mt-10">
-            <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-              <div className="flex gap-4">
-                <img className="h-28 w-28" src="/assets/img/trade.png"></img>
+            <dl className="grid grid-cols-1 gap-10 md:grid-cols-2">
+              <div className="flex gap-4 group">
+                <img
+                  className="h-28 w-28 group-hover:-translate-y-3 transition-transform duration-200 ease-in-out"
+                  src="/assets/img/trade.png"
+                ></img>
                 <div>
                   <p className="text-lg leading-6 font-semibold">Trade</p>
                   <div className="mt-2 text-base">
@@ -149,8 +152,11 @@ const Home: NextPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex gap-4">
-                <img className="h-28 w-28" src="/assets/img/earn.png"></img>
+              <div className="flex gap-4 group">
+                <img
+                  className="h-28 w-28 group-hover:-translate-y-3 transition-transform duration-200 ease-in-out"
+                  src="/assets/img/earn.png"
+                ></img>
                 <div>
                   <p className="text-lg leading-6 font-semibold">Earn</p>
                   <div className="mt-2 text-base">
@@ -159,8 +165,11 @@ const Home: NextPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex gap-4">
-                <img className="h-28 w-28" src="/assets/img/flash.png"></img>
+              <div className="flex gap-4 group">
+                <img
+                  className="h-28 w-28 group-hover:-translate-y-3 transition-transform duration-200 ease-in-out"
+                  src="/assets/img/flash.png"
+                ></img>
                 <div>
                   <p className="text-lg leading-6 font-semibold">Governance</p>
                   <div className="mt-2 text-base">
@@ -170,9 +179,9 @@ const Home: NextPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex gap-4">
+              <div className="flex gap-4 group">
                 <img
-                  className="h-28 w-28"
+                  className="h-28 w-28 group-hover:-translate-y-3 transition-transform duration-200 ease-in-out"
                   src="/assets/img/launchpad.png"
                 ></img>
                 <div>

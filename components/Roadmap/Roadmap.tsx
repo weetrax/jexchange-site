@@ -13,10 +13,12 @@ const Roadmap: React.FC<RoadmapProps> = () => {
         <p className="text-center mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl max-w-2xl mx-auto">
           Roadmap
         </p>
-        <div className="mt-12 flex flex-col md:grid grid-cols-9 mx-auto text-gray-200">
+        <div className="mt-12 flex flex-col md:grid grid-cols-9 mx-auto dark:text-gray-200">
           <div className="flex flex-row-reverse md:contents">
             <div className="border shadow-sm shadow-primary-500 border-dark-900 hover:border-primary-500 transition-all duration-200 ease-in-out col-start-1 col-end-5 p-4 rounded-md my-4 ml-auto w-full">
-              <p className="font-semibold text-lg text-gray-100">2022 Q1</p>
+              <p className="font-semibold text-lg dark:text-gray-100">
+                2022 Q1
+              </p>
               <ul className="list-disc list-inside pl-4">
                 <li>Tokenomics implementation (testnet) ✅</li>
                 <li>Smart contracts audit ✅</li>
@@ -40,7 +42,9 @@ const Roadmap: React.FC<RoadmapProps> = () => {
               <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-primary-500 shadow"></div>
             </div>
             <div className="border shadow-sm shadow-primary-500 border-dark-900 hover:border-primary-500 transition-all duration-200 ease-in-out col-start-6 col-end-10 p-4 rounded-md my-4 mr-auto w-full">
-              <p className="font-semibold text-lg text-gray-100">2022 Q2</p>
+              <p className="font-semibold text-lg dark:text-gray-100">
+                2022 Q2
+              </p>
               <ul className="list-disc list-inside pl-4">
                 <li>Integration of other tokens of Elrond ecosystem ✅</li>
                 <li>Buy/sell ESDT/NFTs feature ✅</li>
@@ -50,7 +54,9 @@ const Roadmap: React.FC<RoadmapProps> = () => {
           </div>
           <div className="flex flex-row-reverse md:contents">
             <div className="border shadow-sm shadow-primary-500 border-dark-900 hover:border-primary-500 transition-all duration-200 ease-in-out col-start-1 col-end-5 p-4 rounded-md my-4 ml-auto w-full">
-              <p className="font-semibold text-lg text-gray-100">2022 Q3</p>
+              <p className="font-semibold text-lg dark:text-gray-100">
+                2022 Q3
+              </p>
               <ul className="list-disc list-inside pl-4">
                 <li>
                   <s>JEX V2 - new types of offer</s> (postponed)
@@ -74,7 +80,9 @@ const Roadmap: React.FC<RoadmapProps> = () => {
               <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-primary-500 shadow"></div>
             </div>
             <div className="border shadow-sm shadow-primary-500 border-dark-900 hover:border-primary-500 transition-all duration-200 ease-in-out col-start-6 col-end-10 p-4 rounded-md my-4 mr-auto w-full">
-              <p className="font-semibold text-lg text-gray-100">2022 Q4</p>
+              <p className="font-semibold text-lg dark:text-gray-100">
+                2022 Q4
+              </p>
               <ul className="list-disc list-inside pl-4">
                 <li>
                   <s>DAO creation</s>
@@ -85,7 +93,9 @@ const Roadmap: React.FC<RoadmapProps> = () => {
 
           <div className="flex flex-row-reverse md:contents">
             <div className="border shadow-sm shadow-primary-500 border-dark-900 hover:border-primary-500 transition-all duration-200 ease-in-out col-start-1 col-end-5 p-4 rounded-md my-4 ml-auto w-full">
-              <p className="font-semibold text-lg text-gray-100">2023 Q1</p>
+              <p className="font-semibold text-lg dark:text-gray-100">
+                2023 Q1
+              </p>
               <ul className="list-disc list-inside pl-4">
                 <li>Staking V2 ✅</li>
                 <li>Stable Swap ✅</li>
@@ -108,7 +118,7 @@ const Roadmap: React.FC<RoadmapProps> = () => {
               <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-primary-500 shadow"></div>
             </div>
             <div className="border shadow-sm shadow-primary-500 border-dark-900 hover:border-primary-500 transition-all duration-200 ease-in-out col-start-6 col-end-10 p-4 rounded-md my-4 mr-auto w-full">
-              <p className="font-semibold text-lg text-gray-100">
+              <p className="font-semibold text-lg dark:text-gray-100">
                 2023 Q2 - Q4
               </p>
               <ul className="list-disc list-inside pl-4">
