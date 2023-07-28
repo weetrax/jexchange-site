@@ -1,14 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { ExternalLinkIcon } from "@heroicons/react/outline";
+import { useScrollPercentage } from "react-scroll-percentage/dist";
 
 type RoadmapProps = {
   //
 };
 
 const Roadmap: React.FC<RoadmapProps> = () => {
+  const [ref, percentage] = useScrollPercentage();
+
   return (
-    <div className="container mx-auto px-3 py-16">
+    <div className="container mx-auto px-3 py-16" ref={ref}>
       <div>
         <p className="text-center mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl max-w-2xl mx-auto">
           Roadmap
@@ -29,17 +32,35 @@ const Roadmap: React.FC<RoadmapProps> = () => {
             </div>
             <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
               <div className="h-full w-6 flex items-center justify-center">
-                <div className="h-full w-1 bg-primary-500 pointer-events-none"></div>
+                <div
+                  className={`h-full w-1 ${"bg-primary-500"} pointer-events-none`}
+                ></div>
               </div>
-              <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-primary-500 shadow"></div>
+              <div
+                className={`w-6 h-6 absolute top-1/2 -mt-3 rounded-full ${"bg-primary-500"} shadow`}
+              ></div>
             </div>
           </div>
           <div className="flex md:contents">
             <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
               <div className="h-full w-6 flex items-center justify-center">
-                <div className="h-full w-1 bg-primary-500 pointer-events-none"></div>
+                <div
+                  style={{ transformOrigin: "top bottom" }}
+                  className={`h-full w-1 transition-all duration-500 ease-in-out ${
+                    percentage.toPrecision(2) >= "0.37"
+                      ? "bg-primary-500"
+                      : "bg-gray-200"
+                  } pointer-events-none`}
+                ></div>
               </div>
-              <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-primary-500 shadow"></div>
+              <div
+                style={{ transformOrigin: "top bottom" }}
+                className={`w-6 h-6 absolute top-1/2 -mt-3 rounded-full transition-all duration-500 ease-in-out ${
+                  percentage.toPrecision(2) >= "0.37"
+                    ? "bg-primary-500"
+                    : "bg-gray-200"
+                } shadow`}
+              ></div>
             </div>
             <div className="border shadow-sm shadow-primary-500 border-dark-900 hover:border-primary-500 transition-all duration-200 ease-in-out col-start-6 col-end-10 p-4 rounded-md my-4 mr-auto w-full">
               <p className="font-semibold text-lg dark:text-gray-100">
@@ -66,18 +87,46 @@ const Roadmap: React.FC<RoadmapProps> = () => {
             </div>
             <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
               <div className="h-full w-6 flex items-center justify-center">
-                <div className="h-full w-1 bg-primary-500 pointer-events-none"></div>
+                <div
+                  style={{ transformOrigin: "top bottom" }}
+                  className={`h-full w-1 transition-all duration-500 ease-in-out ${
+                    percentage.toPrecision(2) >= "0.46"
+                      ? "bg-primary-500"
+                      : "bg-gray-200"
+                  } pointer-events-none`}
+                ></div>
               </div>
-              <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-primary-500 shadow"></div>
+              <div
+                style={{ transformOrigin: "top bottom" }}
+                className={`w-6 h-6 absolute top-1/2 -mt-3 rounded-full transition-all duration-500 ease-in-out ${
+                  percentage.toPrecision(2) >= "0.46"
+                    ? "bg-primary-500"
+                    : "bg-gray-200"
+                } shadow`}
+              ></div>
             </div>
           </div>
 
           <div className="flex md:contents">
             <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
               <div className="h-full w-6 flex items-center justify-center">
-                <div className="h-full w-1 bg-primary-500 pointer-events-none"></div>
+                <div
+                  style={{ transformOrigin: "top bottom" }}
+                  className={`h-full w-1 transition-all duration-500 ease-in-out ${
+                    percentage.toPrecision(2) >= "0.55"
+                      ? "bg-primary-500"
+                      : "bg-gray-200"
+                  } pointer-events-none`}
+                ></div>
               </div>
-              <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-primary-500 shadow"></div>
+              <div
+                style={{ transformOrigin: "top bottom" }}
+                className={`w-6 h-6 absolute top-1/2 -mt-3 rounded-full transition-all duration-500 ease-in-out ${
+                  percentage.toPrecision(2) >= "0.55"
+                    ? "bg-primary-500"
+                    : "bg-gray-200"
+                } shadow`}
+              ></div>{" "}
             </div>
             <div className="border shadow-sm shadow-primary-500 border-dark-900 hover:border-primary-500 transition-all duration-200 ease-in-out col-start-6 col-end-10 p-4 rounded-md my-4 mr-auto w-full">
               <p className="font-semibold text-lg dark:text-gray-100">
@@ -104,18 +153,46 @@ const Roadmap: React.FC<RoadmapProps> = () => {
             </div>
             <div className="col-start-5 col-end-6 md:mx-auto relative mr-10">
               <div className="h-full w-6 flex items-center justify-center">
-                <div className="h-full w-1 bg-primary-500 pointer-events-none"></div>
+                <div
+                  style={{ transformOrigin: "top bottom" }}
+                  className={`h-full w-1 transition-all duration-500 ease-in-out ${
+                    percentage.toPrecision(2) >= "0.64"
+                      ? "bg-primary-500"
+                      : "bg-gray-200"
+                  } pointer-events-none`}
+                ></div>
               </div>
-              <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-primary-500 shadow"></div>
+              <div
+                style={{ transformOrigin: "top bottom" }}
+                className={`w-6 h-6 absolute top-1/2 -mt-3 rounded-full transition-all duration-500 ease-in-out ${
+                  percentage.toPrecision(2) >= "0.64"
+                    ? "bg-primary-500"
+                    : "bg-gray-200"
+                } shadow`}
+              ></div>{" "}
             </div>
           </div>
 
           <div className="flex md:contents">
             <div className="col-start-5 col-end-6 mr-10 md:mx-auto relative">
               <div className="h-full w-6 flex items-center justify-center">
-                <div className="h-full w-1 bg-primary-500 pointer-events-none"></div>
+                <div
+                  style={{ transformOrigin: "top bottom" }}
+                  className={`h-full w-1 transition-all duration-500 ease-in-out ${
+                    percentage.toPrecision(2) >= "0.7"
+                      ? "bg-primary-500"
+                      : "bg-gray-200"
+                  } pointer-events-none`}
+                ></div>
               </div>
-              <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-primary-500 shadow"></div>
+              <div
+                style={{ transformOrigin: "top bottom" }}
+                className={`w-6 h-6 absolute top-1/2 -mt-3 rounded-full transition-all duration-500 ease-in-out ${
+                  percentage.toPrecision(2) >= "0.7"
+                    ? "bg-primary-500"
+                    : "bg-gray-200"
+                } shadow`}
+              ></div>{" "}
             </div>
             <div className="border shadow-sm shadow-primary-500 border-dark-900 hover:border-primary-500 transition-all duration-200 ease-in-out col-start-6 col-end-10 p-4 rounded-md my-4 mr-auto w-full">
               <p className="font-semibold text-lg dark:text-gray-100">
