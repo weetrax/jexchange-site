@@ -1,4 +1,5 @@
 import ArrowDown from "../components/_Layout/SVGIcons/ArrowDown";
+import classNames from "classnames";
 import Container from "../components/_Layout/Container";
 import Head from "next/head";
 import Stats from "../components/Stats";
@@ -18,9 +19,28 @@ const Home: NextPage = () => {
   });
 
   const [tokens, setTokens] = useState<Token[]>([]);
+  const [loaded, setLoaded] = useState<boolean[]>([]);
+
+  // Fonction pour marquer une image comme chargée après le délai aléatoire
+  const randomDelay = () => Math.random() * 1800;
+  const markImageAsLoaded = (index: number) => {
+    setTimeout(() => {
+      setLoaded((prevLoaded) => {
+        const newLoaded = [...prevLoaded];
+        newLoaded[index] = true;
+        return newLoaded;
+      });
+    }, randomDelay());
+  };
 
   useEffect(() => {
-    setTokens(sortedEsdt());
+    const _tokens = sortedEsdt();
+    _tokens.forEach((token, index) => {
+      const img = new Image();
+      img.onload = () => markImageAsLoaded(index);
+      img.src = token.imgUrl;
+    });
+    setTokens(_tokens);
   }, []);
 
   return (
@@ -100,7 +120,10 @@ const Home: NextPage = () => {
                       rel="noreferrer"
                       target={"_blank"}
                       href={`https://app.jexchange.io/trade?token_a=${x.identifier}&token_b=WEGLD-bd4d79`}
-                      className="fadein-item hover:shadow-[0_0_20px_-7px_rgba(0,161,154,1)] pointer-events-none md:pointer-events-auto min-w-[100px] rounded border dark:border dark:border-dark-600 hover:border-primary-500 dark:hover:border-primary-500 duration-200 transition-all ease-in-out"
+                      className={classNames(
+                        "hover:shadow-[0_0_20px_-7px_rgba(0,161,154,1)] pointer-events-none md:pointer-events-auto min-w-[100px] rounded border dark:border dark:border-dark-600 hover:border-primary-500 dark:hover:border-primary-500 duration-200 transition-all ease-in-out",
+                        !loaded[i] ? "opacity-0" : "opacity-100 fadein-item"
+                      )}
                     >
                       <div className="flex flex-col text-center">
                         <div className="p-1">
