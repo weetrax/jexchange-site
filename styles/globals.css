@@ -7,6 +7,21 @@
     min-height: calc(100vh - 64px);
 }
 
+.fadein-item {
+    -webkit-animation: fadein 1s linear forwards;
+    animation: fadein 1s linear forwards;
+}
+
+@-webkit-keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+    
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+    
 .title-gradient {
     background: linear-gradient(90deg, #00a19a, #33b4ae 45%, #66c7c2);
     -webkit-background-clip: text;

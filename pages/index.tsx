@@ -34,7 +34,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/assets/img/favicon.ico" />
       </Head>
       <Container>
-        <div className="my-8 min-h-screen-nav flex items-center justify-center md:justify-start relative">
+        <div className="fadein-item my-8 min-h-screen-nav flex items-center justify-center md:justify-start relative">
           <div className="text-center md:text-left z-10">
             <h1
               style={{
@@ -100,7 +100,7 @@ const Home: NextPage = () => {
                       rel="noreferrer"
                       target={"_blank"}
                       href={`https://app.jexchange.io/trade?token_a=${x.identifier}&token_b=WEGLD-bd4d79`}
-                      className="hover:shadow-[0_0_20px_-7px_rgba(0,161,154,1)] pointer-events-none md:pointer-events-auto min-w-[100px] rounded border dark:border dark:border-dark-600 hover:border-primary-500 dark:hover:border-primary-500 duration-200 transition-all ease-in-out"
+                      className="fadein-item hover:shadow-[0_0_20px_-7px_rgba(0,161,154,1)] pointer-events-none md:pointer-events-auto min-w-[100px] rounded border dark:border dark:border-dark-600 hover:border-primary-500 dark:hover:border-primary-500 duration-200 transition-all ease-in-out"
                     >
                       <div className="flex flex-col text-center">
                         <div className="p-1">
