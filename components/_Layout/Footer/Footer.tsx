@@ -12,7 +12,8 @@ const Footer: React.FC<FooterProps> = () => {
       <Container>
         <div className="flex flex-col gap-2 items-center py-8">
           <div>
-            Made with ❤️ by <strong>JEX</strong> Team - Build on{" "}
+            Made with <span title="Weetrax">❤️</span> by <strong>JEX</strong>{" "}
+            Team - Build on{" "}
             <a
               className="font-semibold"
               rel="noreferrer"
