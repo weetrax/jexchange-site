@@ -47,9 +47,9 @@ const Navbar: React.FC<NavbarProps> = () => {
         <>
           <Container>
             <div className="relative flex items-center justify-between h-16">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <div className="flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-700">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md text-gray-400 hover:text-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -59,7 +59,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex-shrink-0 flex items-center ml-12 sm:ml-0">
+                <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-9 w-auto"
                     src="/assets/img/logo.png"
