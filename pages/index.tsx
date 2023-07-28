@@ -2,7 +2,9 @@ import ArrowDown from "../components/_Layout/SVGIcons/ArrowDown";
 import Container from "../components/_Layout/Container";
 import Head from "next/head";
 import Stats from "../components/Stats";
-import { esdt } from "../esdt";
+import { esdt, sortedEsdt } from "../esdt";
+import { Token } from "../types";
+import { useEffect, useState } from "react";
 import { useTypewriter } from "react-simple-typewriter";
 import type { NextPage } from "next";
 
@@ -14,6 +16,12 @@ const Home: NextPage = () => {
     deleteSpeed: 60,
     delaySpeed: 1200,
   });
+
+  const [tokens, setTokens] = useState<Token[]>([]);
+
+  useEffect(() => {
+    setTokens(sortedEsdt());
+  }, []);
 
   return (
     <div>
@@ -85,7 +93,7 @@ const Home: NextPage = () => {
                   gridTemplateRows: "1fr 1fr 1fr",
                 }}
               >
-                {esdt.map((x, i) => {
+                {tokens?.map((x, i) => {
                   return (
                     <a
                       key={i}
