@@ -47,7 +47,7 @@ const Roadmap: React.FC<RoadmapProps> = () => {
                 <div
                   style={{ transformOrigin: "top bottom" }}
                   className={`h-full w-1 transition-all duration-500 ease-in-out ${
-                    percentage.toPrecision(2) >= "0.37"
+                    percentage.toPrecision(2) >= "0.35"
                       ? "bg-primary-500"
                       : "bg-gray-200"
                   } pointer-events-none`}
@@ -56,7 +56,7 @@ const Roadmap: React.FC<RoadmapProps> = () => {
               <div
                 style={{ transformOrigin: "top bottom" }}
                 className={`w-6 h-6 absolute top-1/2 -mt-3 rounded-full transition-all duration-500 ease-in-out ${
-                  percentage.toPrecision(2) >= "0.37"
+                  percentage.toPrecision(2) >= "0.35"
                     ? "bg-primary-500"
                     : "bg-gray-200"
                 } shadow`}
@@ -90,7 +90,7 @@ const Roadmap: React.FC<RoadmapProps> = () => {
                 <div
                   style={{ transformOrigin: "top bottom" }}
                   className={`h-full w-1 transition-all duration-500 ease-in-out ${
-                    percentage.toPrecision(2) >= "0.46"
+                    percentage.toPrecision(2) >= "0.44"
                       ? "bg-primary-500"
                       : "bg-gray-200"
                   } pointer-events-none`}
@@ -99,7 +99,7 @@ const Roadmap: React.FC<RoadmapProps> = () => {
               <div
                 style={{ transformOrigin: "top bottom" }}
                 className={`w-6 h-6 absolute top-1/2 -mt-3 rounded-full transition-all duration-500 ease-in-out ${
-                  percentage.toPrecision(2) >= "0.46"
+                  percentage.toPrecision(2) >= "0.44"
                     ? "bg-primary-500"
                     : "bg-gray-200"
                 } shadow`}
@@ -113,7 +113,7 @@ const Roadmap: React.FC<RoadmapProps> = () => {
                 <div
                   style={{ transformOrigin: "top bottom" }}
                   className={`h-full w-1 transition-all duration-500 ease-in-out ${
-                    percentage.toPrecision(2) >= "0.55"
+                    percentage.toPrecision(2) >= "0.53"
                       ? "bg-primary-500"
                       : "bg-gray-200"
                   } pointer-events-none`}
@@ -122,7 +122,7 @@ const Roadmap: React.FC<RoadmapProps> = () => {
               <div
                 style={{ transformOrigin: "top bottom" }}
                 className={`w-6 h-6 absolute top-1/2 -mt-3 rounded-full transition-all duration-500 ease-in-out ${
-                  percentage.toPrecision(2) >= "0.55"
+                  percentage.toPrecision(2) >= "0.53"
                     ? "bg-primary-500"
                     : "bg-gray-200"
                 } shadow`}
@@ -156,7 +156,7 @@ const Roadmap: React.FC<RoadmapProps> = () => {
                 <div
                   style={{ transformOrigin: "top bottom" }}
                   className={`h-full w-1 transition-all duration-500 ease-in-out ${
-                    percentage.toPrecision(2) >= "0.64"
+                    percentage.toPrecision(2) >= "0.62"
                       ? "bg-primary-500"
                       : "bg-gray-200"
                   } pointer-events-none`}
@@ -165,7 +165,7 @@ const Roadmap: React.FC<RoadmapProps> = () => {
               <div
                 style={{ transformOrigin: "top bottom" }}
                 className={`w-6 h-6 absolute top-1/2 -mt-3 rounded-full transition-all duration-500 ease-in-out ${
-                  percentage.toPrecision(2) >= "0.64"
+                  percentage.toPrecision(2) >= "0.62"
                     ? "bg-primary-500"
                     : "bg-gray-200"
                 } shadow`}
@@ -179,7 +179,7 @@ const Roadmap: React.FC<RoadmapProps> = () => {
                 <div
                   style={{ transformOrigin: "top bottom" }}
                   className={`h-full w-1 transition-all duration-500 ease-in-out ${
-                    percentage.toPrecision(2) >= "0.7"
+                    percentage.toPrecision(2) >= "0.68"
                       ? "bg-primary-500"
                       : "bg-gray-200"
                   } pointer-events-none`}
@@ -188,7 +188,7 @@ const Roadmap: React.FC<RoadmapProps> = () => {
               <div
                 style={{ transformOrigin: "top bottom" }}
                 className={`w-6 h-6 absolute top-1/2 -mt-3 rounded-full transition-all duration-500 ease-in-out ${
-                  percentage.toPrecision(2) >= "0.7"
+                  percentage.toPrecision(2) >= "0.68"
                     ? "bg-primary-500"
                     : "bg-gray-200"
                 } shadow`}
